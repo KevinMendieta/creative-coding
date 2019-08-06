@@ -18,11 +18,10 @@ function setup() {
     rect(FACTOR * index, 720 - (element * 5), FACTOR, element * 10)
   })
   console.log(ELEMENTS)
-  //console.log(sort(ELEMENTS))
-  frameRate(1)
 }
 
 function draw() {
+  frameRate(1)
   if (I <= LEN) {
     for (let j = 0; j < LEN; j = j + 2*I) {
       const from = j

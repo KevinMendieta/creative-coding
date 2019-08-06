@@ -8,11 +8,12 @@ function setup() {
 }
 
 function draw() {
+  frameRate(3)
+  pickColor()
   drawCircle(WIDTH / 2, HEIGHT / 2, 250, 250)
 }
 
 const drawCircle = (x, y, d) => {
-  pickColor()
   ellipse(x, y, d, d)
   if (d > 10) {
     const newD = d / 2
